@@ -1,0 +1,195 @@
+/*
+
+|""""""""|"""|""""""""""|""""""""""|"""""""""""\   F I R R M
+|        |   |          |          |           |   Framework
+|   =====|   |   ===   _/   ===   _/   |   |   |   
+|        |   |          |          |   |   |   |   Created  by:         
+|   .====|   |   .==.   |   .==.   |   |   |   |   Kareem Faraj
+|   |    |   |   |  |   |   |  |   |   |   |   |   
+|   |    |   |   |  |   |   |  |   |   |   |   |   created  on:     
+|___|    |___|___|  |___|___|  |___|___|___|___|   10  06  2023
+
+
+updated:
+14  04  2023     
+
+last update:
+06  06  2023
+                                    
+Desicription:       Firrm is a simple css framework  just created
+                    for testing new languages  that i learn  like
+                    JavaScript, php, Pyhon and Backend frameworks
+                    like    Django,     Laraver     and     more.
+
+HOW TO USE FIRRM?:  Vist Firrm.rf.gd
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap');
+
+/* MISC A */
+*               {font-family: 'Readex Pro', sans-serif;
+                 font-size:16px;
+                 scroll-behavior:smooth;}
+a               {color: black;text-decoration: none;max-width: min-content;}
+                 
+body            {margin:0; padding: 8px; background: #ffff;}
+p, label, span  {padding:0 6px;margin: 0;}
+hr, .line       {border:0;border-top:1px solid #88888888;}
+
+/*      test    */
+
+/* Header */ 
+header          {z-index: 9;}
+.nav            {background: #fff;
+                 box-shadow: 0 3px 5px #171b461c;
+                 position: fixed;
+                 margin: -8px;
+                 padding: 10px; 
+                 width: 100%;
+                 align-items: center;}
+
+/* buttons */
+button, .btn                  {margin: 4px;
+                               padding: 6px 16px;
+                               width: fit-content;
+                               transition: 0.2s;
+                               cursor: pointer;
+                               border: none;}
+                               
+button:hover, .btn:focus      {color: #4887e6;}
+
+/*//////////////////////////////////////////////////////////////////
+                       ==============
+                           LAYOUT
+                       ==============
+/* Card */
+.card           {padding: 8px;
+                 background: #fff;
+                 margin: 8px;
+                 min-width: fit-content;
+                 height: fit-content;}
+
+.container      {padding:8px;
+                 margin:8px;}
+
+
+.brr            {border-radius:8px;}
+.brrr           {border-radius:1em;}
+.crcl           {border-radius: 100px;}
+.crcli          {border-radius:100px;
+                 padding:1em;
+                 width:1em;
+                 height:1em;
+                 min-width: max-content;
+                 min-height: max-content;
+                 margin:4px;}
+                 
+.crclii         {border-radius:100px;
+                 padding:1em;
+                 width:2em;
+                 height:2em;
+                 min-width: max-content;
+                 min-height: max-content;
+                 margin:4px;}
+                             
+.crcliii        {border-radius:100px;
+                 padding:1em;
+                 width:3em;
+                 height:3em;
+                 min-width: max-content;
+                 min-height: max-content;
+                 margin:4px;}
+
+.propic         {min-width: 64px;
+                 height: 64px;
+                 background: #dcdcdc;
+                 border-radius: 100px;
+                 margin: 4px;
+                 object-fit: cover;
+                }
+
+/* scroll */
+.scroll         {overflow: auto;
+                 display: flex;
+                 margin: 0 -8px;
+                 width: 100%;
+                 padding: 8px;}
+
+/* Input */
+input           {background: #e1ecff;
+                 border: none;
+                 padding: 4px 10px;
+                 margin: 4px;}
+
+
+
+/*  margin and padding  */
+.pdnno          {padding: 0;}
+.pdni           {padding: 8px;}
+.pdnii          {padding: 1em;}
+.pdniii         {padding: 1.5em;}
+
+.mrgnno         {margin:  0;}
+.mrgni          {margin:  8px;}
+.mrgnii         {margin:  1em;}
+.mrgniii        {margin:  1.2em;}
+/***/
+
+
+/*//////////////////////////////////////////////////////////////////
+                            ================
+                             WIDTH & HEIGHT
+                            ================
+*/
+.widthi         {width: 2em;}
+.widthii        {width: 1em;}
+.widthiii       {width: 0.5em;}
+
+
+/*//////////////////////////////////////////////////////////////////
+                             ==============
+                             GLOBAL STYLING
+                             ==============
+    */
+    /* colors */
+    .black          {color:      #000;   }
+    .white          {color:      #fff;   }
+    .gray           {color:      #ddd;   }
+    .blue           {color:      #3265f1;}
+    .prpl           {color:      #724ae0;}
+    .red            {color:      #ee3d52;}
+    .green          {color:      #43c287;}
+    .yellow         {color:      #e4cd71;}
+    /* backgrouds */
+    .bg-black       {background: #000;   }
+    .bg-white       {background: #fff;   }
+    .bg-gray        {background: #ddd;   }
+    .bg-blue        {background: #3265f1;}
+    .bg-prpl        {background: #724ae0;}
+    .bg-red         {background: #ee3d52;}
+    .bg-green       {background: #43c287;}
+    .bg-yellow      {background: #e4cd71;}
+
+    
+    /* texts */
+    .tt             {font-family: 'Readex Pro', sans-serif;padding:0 8px;}
+    .tti            {font-family: 'Readex Pro', sans-serif;font-size:40px;padding:0 8px;}
+    .ttii           {font-family: 'Readex Pro', sans-serif;font-size:30px;padding:0 8px;}
+    .ttiii          {font-family: 'Readex Pro', sans-serif;font-size:20px;padding:0 8px;}
+    .stxt           {font-family: 'Readex Pro', sans-serif;font-size:12px;opacity:  50%;}
+    .txtc           {text-align:  center;}
+    .txtr           {text-align:  right; }
+    .txtl           {text-align:  left;  }
+    .bold           {font-weight: bold;  }
+    /* Fonts */
+    .font-mono      {font-family: monospace;         }
+
+    /* Display */
+    .flex           {display: flex;}
+
+    /* Effects */
+    .border         {border: 1px solid #bbb;}
+
+    .shadow         {box-shadow: 0 2px 6px #00000033}
+    .shadowl        {box-shadow: 0 2px 6px #0077ff77}
+/*/////////////////////////////////////////////////////////////////*/
