@@ -1,0 +1,10 @@
+#contents:
+ | ACCESS            | CLASS        | CLASS MEANING |
+ +-------------------+--------------+---------------+
+ | main color        | .blue        | color A
+ | title             | .title
+ | p text            | p
+ | small text        | .stxt 
+ | border raduis     | .brr
+ | padding + margin  | .mnp
+
