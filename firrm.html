@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="firrm.css">
+    <!--    From Githum
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kfmcoder/firrm@latest/firrm.css">
+    -->
     <title>FIRRM test</title>
 </head>
  
@@ -54,7 +57,29 @@
     <div>
         <span class="bold ttiii">Rounded box</span><span class="stxt">small description</span>
         <div class="scroll">
+<div class="card brr shadow">
+                <span class="ttii blue">Sample Box 1</span>
+                <hr>
+                <p class="stxt">A rounded box with shadow</p>
+            </div>
+            
+            <div class="card brr border">
+                <span class="ttii green">Sample Box 2</span>
+                <hr>
+                <p class="stxt">A rounded box with border</p>
+            </div>
 
+            <div class="card brrr bg-lblue">
+                <span class="ttii white">Sample Box 3</span>
+                <hr>
+                <p class="stxt white">A more rounded colored box</p>
+            </div>
+
+            <div class="container brr bg-lyellow">
+                <span class="ttii">Sample Box 4</span>
+                <hr>
+                <p class="stxt">A container with rounded corners</p>
+            </div>
         </div>
     </div>
     <hr>
@@ -239,6 +264,7 @@
                 <button class="btn white bg-blue">Login</button>
             </form>
             <hr>
+
             <p class="stxt txtl">classes used: <br> card:</p>
         </div>
         <div class="card shadow ">
@@ -253,6 +279,110 @@
     <div class="card brr bg-black ">
         <div class="ttii white">Paragraphs:</div>
     </div>
+
+    <div class="cardii">dsds</div>
+
+    <!-- Font Variations Section -->
+    <div class="card brr shadow">
+        <span class="ttiii bold">Font Styles</span>
+        <hr>
+        <div class="scroll">
+            <div class="container fsz20">20px Text (.fsz20)</div>
+            <div class="container fsz30">30px (.fsz30)</div>
+            <div class="container fsz40">40px (.fsz40)</div>
+            <div class="container fsz50">50px (.fsz50)</div>
+        </div>
+    </div>
+
+    <!-- Opacity Effects -->
+    <div class="card brr shadow">
+        <span class="ttiii bold">Opacity Variations</span>
+        <hr>
+        <div class="scroll">
+            <div class="container bg-blue white opacityi">80% Opacity</div>
+            <div class="container bg-blue white opacityii">60% Opacity</div>
+            <div class="container bg-blue white opacityiii">40% Opacity</div>
+        </div>
+    </div>
+
+    <!-- Text Alignments -->
+    <div class="card brr shadow">
+        <span class="ttiii bold">Text Alignments</span>
+        <hr>
+        <div class="panels">
+            <div class="panel-33 txtl bg-lblue pdnii">Left Aligned</div>
+            <div class="panel-33 txtc bg-lgreen pdnii">Center Aligned</div>
+            <div class="panel-33 txtr bg-lyellow pdnii">Right Aligned</div>
+        </div>
+    </div>
+
+    <!-- Posts Demo -->
+    <div class="card brr shadow">
+        <span class="ttiii bold">Social Post Layout</span>
+        <hr>
+        <div class="posts">
+            <div class="post card bg-white brrr">
+                <div class="top">
+                    <div class="postinfo">
+                        <div class="postpic">
+                            <div class="propica bg-lblue"></div>
+                        </div>
+                        <div class="posttext">
+                            <div class="name b">Sample User</div>
+                            <p class="date opacityiii">March 17, 2025</p>
+                        </div>
+                    </div>
+                    <p>This is a sample social media post layout using Firrm CSS</p>
+                </div>
+                <div class="bg-lgreen height100px"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Drawer Demo -->
+    <div class="card brr shadow">
+        <span class="ttiii bold">Navigation Drawer</span>
+        <hr>
+        <section class="drawer-container scroll">
+            <div class="drawer-toggle">
+                <div class="miconcontainer">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+            <div class="drawer-content txtl">
+                <div class="drawerbtn">
+                    <div class="btncontent b">
+                        <span>Home</span>
+                    </div>
+                </div>
+                <div class="drawerbtn">
+                    <div class="btncontent b">
+                        <span>Profile</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Width & Height Demo -->
+    <div class="card brr shadow">
+        <span class="ttiii bold">Size Classes</span>
+        <hr>
+        <div class="scroll">
+            <div class="container width100px height100px bg-lblue">100x100</div>
+            <div class="container width200px height100px bg-lgreen">200x100</div>
+            <div class="container width300px height100px bg-lyellow">300x100</div>
+        </div>
+    </div>
+
+    <script>
+    document.querySelector('.miconcontainer').addEventListener('click', function() {
+        this.classList.toggle('change');
+        document.querySelector('.drawer-container').classList.toggle('open');
+    });
+    </script>
 
 </body>
 
