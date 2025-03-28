@@ -7,26 +7,29 @@ __________________________________________________    F I R R M --
  |   |      |   |   |  |   |   |  |   |   |   |   |   created  on:     
  |___|      |___|___|  |___|___|  |___|___|___|___|   10  04  2023
 
-created on:  |  updated:    |  updated:    |  last update:   |
-10 04 2023   |  14 04 2023  |  06 06 2023  |  28 03 2024     |
-             |              |              |  New FIRRM logo |
+created on:  |  updated:    |  updated:    |  updated:       | last update: |
+10 04 2023   |  14 04 2023  |  06 06 2023  |  28 03 2024     | 28 03 2025   |
+             |              |              |  New FIRRM logo | Major update |
 
 Description:        Firrm is a simple css framework just created
                     for testing new languages  that i learn like
                     JavaScript php Python and Backend frameworks
-                    like    Django,     Laravel     and     more.
+                    like  Django,  Node.JS  Laravel   and   more.
 
 HOW TO USE FIRRM?:  Visit Firrm.rf.gd
 
 */
 
-/* imports */
+/* imports 
 @import url('https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap');
+*/
 
 :root {
     --black     :#000;   
     --white     :#fff;   
+    --lgray     :#f1f1f1;
     --gray      :#ddd;    
+    --dgray     :#444;    
     --lsky      :#c5f2ff;
     --sky       :#00eaff;
     --lblue     :#60b0fb;
@@ -49,19 +52,23 @@ HOW TO USE FIRRM?:  Visit Firrm.rf.gd
 /* MISC A */
 *               {font-family: 'Readex Pro', sans-serif;
                  -webkit-tap-highlight-color: transparent;
-                 scroll-behavior:smooth;}
+                 scroll-behavior:smooth;
+                 scroll-padding-top: 5em;}
+
 a               {color: black;text-decoration: none;}
                  
 body            {margin:0; padding: 8px;}
 p, label, span  {padding:0 6px;margin: 0; font-size: 14px;}
 hr, .line       {border:0;border-top:1px solid #88888888;}
 
-.hover, .hoverz, .hoverblue,
-.hoverbluesh                {transition:.2s;}
+.hover, .hoverz, .hoverblue, .hoverlsky, .hoverblack, .hovergray,
+.hoverbluesh                {transition:.1s;}
 
-.hover:hover, .hoverz:hover    {transition: .2s;}
+.hover:hover, .hoverz:hover    {transition: .1s;}
 .hover:hover                   {opacity: 80%;}
 .hoverz:hover                  {transform: scale(1.05);}
+.hoverblack:hover              {background: var(--black); color: var(--white);}
+.hovergray:hover               {background: var(--gray); color: var(--black);}
 
 .hoverblue       {border: 1px #00000000;}
 .hoverblue:hover {background: #f3fbfe;
@@ -70,14 +77,18 @@ hr, .line       {border:0;border-top:1px solid #88888888;}
 
 .hoverbluesh:hover {box-shadow: 0 2px 5px var(--lblue);}
 .hoverlblue:hover  {background: var(--lblue);}
-.hoverlsky:hover  {background: var(--lsky);}
+.hoverlsky:hover   {background: var(--lsky);}
+
+/* Directons */
+.rtl {direction: rtl;}
+.ltr {direction: ltr;}
 
 /*      test    */
 
 /* Header */ 
 header          {z-index: 9;}
 .nav            {background: #fff;
-                 box-shadow: 0 3px 5px #171b461c;
+                 box-shadow: 0 3px 5px #171b460a;
                  position: fixed;
                  margin: -8px;
                  padding: 10px; 
@@ -97,11 +108,63 @@ button, .btn{    margin: 4px;
                  cursor: pointer;
                  border: none;
 }
+
+.btn-black       {background: var(--black  );color: white;}
+.btn-white       {background: var(--white  );}
+.btn-lgray       {background: var(--lgray  );}
+.btn-gray        {background: var(--gray   );}
+.btn-dgray       {background: var(--dgray  );color: white;}
+.btn-blue        {background: var(--blue   );color: white;}
+.btn-lblue       {background: var(--lblue  );}
+.btn-sky         {background: var(--sky    );}
+.btn-lsky        {background: var(--lsky   );}
+.btn-trqz        {background: var(--trqz   );}
+.btn-ltrqz       {background: var(--ltrqz  );}
+.btn-lemon       {background: var(--lemon  );}
+.btn-llemon      {background: var(--llemon );}
+.btn-prpl        {background: var(--prpl   );}
+.btn-lprpl       {background: var(--lprpl  );}
+.btn-red         {background: var(--red    );}
+.btn-lred        {background: var(--lred   );}
+.btn-orng        {background: var(--orng   );}
+.btn-lorng       {background: var(--lorng  );}
+.btn-green       {background: var(--green  );}
+.btn-lgreen      {background: var(--lgreen );}
+.btn-yellow      {background: var(--yellow );}
+.btn-lyellow     {background: var(--lyellow);}
+
+
                                
 button:hover,
 .btn:focus      {color: #4887e6;}
 
 /*//////////////////////////////////////////////////////////////////
+
+
+                <div class="cardi mrgnii brrr">
+                    <div class="flex mrgni" style="align-items: center; justify-content:space-between;">
+                        <h2 class=" mrgnno">Welcome</h2>
+                        <i class="material-icons">info</i>
+                    </div>
+                    <p class="opacityi">
+                        Welcome to Kromium, a digital agency that provides innovative solutions for businesses. We specialize in graphic design, web development, and digital marketing services to help you grow your business online. Our team of experts will work with you to create a custom solution that meets your needs and exceeds your expectations. Contact us today to learn more about how we can help you achieve your goals.
+                    </p>
+                </div>
+
+
+                <div class="cardi mrgnii brrr">
+                    <div class="flex mrgni" style="align-items: center; justify-content:space-between;">
+                        <h2 class=" mrgnno">Welcome</h2>
+                        <i class="material-icons">info</i>
+                    </div>
+                    <p class="opacityi">
+                        Welcome to Kromium, a digital agency that provides innovative solutions for businesses. We specialize in graphic design, web development, and digital marketing services to help you grow your business online. Our team of experts will work with you to create a custom solution that meets your needs and exceeds your expectations. Contact us today to learn more about how we can help you achieve your goals.
+                    </p><hr>
+                    <div>
+                        <button class="brrr">About</button>
+                        <button class="brrr">Learn more</button>
+                    </div>
+                </div>
                        ==============
                            LAYOUT
                        ==============
@@ -243,7 +306,7 @@ postii img
     object-fit: cover;
     max-width:100%;
     margin: 0;
-    border-radius: 8px 8px 0 0;
+    border-radius: 16px 16px 0 0;
 }
 
 /*////////////////////////////////////////////////////////*/
@@ -275,109 +338,118 @@ HTML:
 </section>
 
 CSS:                                                          */
-/* animated menu icon */
-.miconcontainer {
-    display: inline-block;
-    cursor: pointer;
-}
 
-.bar1,
-.bar2,
-.bar3 {
-    width: 30px;
-    
-    height: 3px;
-    border-radius: 100px;
-    background-color: #000000;
-    margin: 5px 0;
-    transition: 0.2s;
-}
-
-/* after click */
-.change .bar1 {
-    transform: translate(0, 8px) rotate(-45deg);
-}
-
-.change .bar2 {
-    opacity: 0;
-}
-
-.change .bar3 {
-    transform: translate(0, -8px) rotate(45deg);
-}
-
-/************  DRAWER ************/
-.drawer-container {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: -110%;
-    overflow: auto;
-    /* Position off-screen by default */
-    width: 20%;
-    background: linear-gradient(#ddd, #fff, #fff, #fff);
-    transition: left 0.2s ease;
-}
-
-.drawer-container.open {
-    left: 0;
-    /* Slide in from the left when open */
-}
-
-.drawer-toggle {
-    position: fixed;
-    top: 13px;
-    left: 15px;
-    z-index: 1;
-    cursor: pointer;
-    font-size: 30px;
-    font-family: sans-serif;
-}
-
-.drawer-content {
-    padding: 20px;
-}
-
-@media screen and (max-width: 800px) {
-    .drawer-container {
-        width: fit-content;
-    }
-    .drawerbtn .btncontent {
-        width: 200px;
-    }
-}
-
-.drawerbtn {
-    border-radius: 10px;
-    width: 100%;
-    padding: 16px;
-    height: 23px;
-    background: #ddd;
-    border: 1px solid #ddd;
-    transition: 0.1s;
-    font-size: 11px;
-    margin: 8px 0;
-    overflow: hidden;
-}
-
-.drawerbtn .btncontent {
-    width: 200px;
-    display: flex;
-    align-items: center;
-}
-
-.drawerbtn:hover {
-    background: #aaa;
-}
-
-
-i.drawericons {
-    align-items: center;
-    padding-right: 6px;
-}
+/* 
+/*        /* animated menu icon */
+/*        .miconcontainer {
+/*            display: inline-block;
+/*            cursor: pointer;
+/*        }
+/*
+/*        .bar1,
+/*        .bar2,
+/*        .bar3 {
+/*            width: 30px;
+/*            height: 3px;
+/*            border-radius: 100px;
+/*            background-color: #0c121f;
+/*            margin: 5px 0;
+/*            transition: 0.2s;
+/*        }
+/*
+/*        /* after click */
+/*        .change .bar1 {
+/*            transform: translate(0, 8px) rotate(-45deg);
+/*        }
+/*
+/*        .change .bar2 {
+/*            opacity: 0;
+/*        }
+/*
+/*        .change .bar3 {
+/*            transform: translate(0, -8px) rotate(45deg);
+/*        }
+/*
+/*        /************  DRAWER ************/
+/*        .drawer-container {
+/*            position: fixed;
+/*            top: 0;
+/*            bottom: 0;
+/*            left: -100%;
+/*            overflow: auto;
+/*            background: #000;
+/*            /* Position off-screen by default */
+/*            width: 20%;
+/*            transition: left 0.2s ;
+/*            color: white;
+/*        }
+/*
+/*        .drawer-container.open {
+/*            left: 0;
+/*            /* Slide in from the left when open */
+/*        }
+/*
+/*        .drawer-toggle {
+/*            position: fixed;
+/*            top: 13px;
+/*            left: 15px;
+/*            z-index: 1;
+/*            cursor: pointer;
+/*            font-size: 30px;
+/*            font-family: sans-serif;
+/*        }
+/*
+/*        .drawer-content {
+/*            padding: 20px;
+/*        }
+/*
+/*        @media screen and (max-width: 800px){
+/*            .drawer-container{
+/*                width:300px
+/*            }
+/*        }
+/**/
 
 /*////////////////////////////////////////////////////////*/
 
+
+/*       TABS        */
+.tabs-container {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.tab-buttons {
+    display: flex;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    cursor: pointer;
+    background: #f1f1f1;
+    border: none;
+    outline: none;
+    transition: background 0.3s;
+}
+
+.tab-button:hover {
+    background: #000000;
+}
+
+.tab-button.active {
+    background: var(--black);
+    color: white;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    border-top: none;
+}
+
+.tab-content.active {
+    display: block;
+}
 
 
 /*////////////////////////////////////////////////////////*/
@@ -518,14 +590,57 @@ input           {background: #e1ecff;
 /***/
 
 
-/*//////////////////////////////////////////////////////////////////
+
+/*/////////////////////////////////////////////////////////////////// 
+added 27/03/2025 while developing Kromium project
+                            ===============
+                                Justify
+                            ===============
+*/
+.jcc            {justify-content: center}
+.jcl            {justify-content: left}
+.jcr            {justify-content: right}
+.jcsa           {justify-content: space-around}
+.jcsb           {justify-content: space-between}
+.jcse           {justify-content: space-evenly}
+
+
+/*
+<div class="cardi txtr mrgnii brrr introcard">
+<div class="flex mrgni" style="align-items: center; justify-content:space-between;">
+    <i class="material-icons">info</i>
+    <h2 class=" mrgnno">اهلا وسهلا بك</h2>
+</div>
+<p class="opacityi">
+    كروميوم هو موقع ويب تقني وتجاري يضم مشاريع متخصصة في البرمجيات والخدمات الرقمية، موجهة للأعمال
+    والأفراد. يركز كروميوم على الذكاء الاصطناعي، الأتمتة، وتطوير الويب، ويوفر حلولًا مبتكرة لتسهيل
+    العمليات وتحسين الكفاءة عبر البرمجيات الذكية والتقنيات الحديثة.
+</p>
+<hr>
+<div class="cardfooter flex jcsb">
+    <div>
+        <button class="brrr b">كريم فرج</button>
+    </div>
+    <div>
+        <button class="brrr b">حول</button>
+        <button class="brrr b">معرفة المزيد</button>
+    </div>
+</div>
+</div>
+*/
+
+
+/*///////////////////////////////////////////////////////////////////
                             ================
                              WIDTH & HEIGHT
                             ================
 */
-.widthi         {width: 2em;}
+.widthfitc      {width: fit-content;}
+.widthminc      {width: min-content;}
+.widthmaxc      {width: max-content;}
+.widthi         {width: .5em}
 .widthii        {width: 1em;}
-.widthiii       {width: 0.5em;}
+.widthiii       {width: 2em;}
 .widthfull      {width: 100%;}
 .width10px      {width: 10px;}
 .width20px      {width: 20px;}
@@ -543,9 +658,12 @@ input           {background: #e1ecff;
 .width500px     {width: 500px;}
 .width600px     {width: 600px;}
 
-.heighti        {height: 2em;}
+.heightfitc     {height: fit-content;}
+.heightminc     {height: min-content;}
+.heightmaxc     {height: max-content;}
+.heighti        {height: .5em;}
 .heightii       {height: 1em;}
-.heightiii      {height: 0.5em;}
+.heightiii      {height: 2em;}
 .heightfull     {height: 100%;}
 .height10px     {height: 10px;}
 .height20px     {height: 20px;}
@@ -571,7 +689,9 @@ input           {background: #e1ecff;
     /* colors */
     .black          {color:      var(--black  );}
     .white          {color:      var(--white  );}
+    .lgray          {color:      var(--lgray  );}
     .gray           {color:      var(--gray   );}
+    .dgray          {color:      var(--dgray  );}
     .blue           {color:      var(--blue   );}
     .lblue          {color:      var(--lblue  );}
     .sky            {color:      var(--sky    );}
@@ -591,11 +711,13 @@ input           {background: #e1ecff;
     .yellow         {color:      var(--yellow );}
     .lyellow        {color:      var(--lyellow);}
     /* backgrouds */ 
-    .bg-no          {background:     #00000000 ;}
-    .bg-blur        {backdrop-filter:   blur(1em);}
+    .bg-no          {background:   #00000000 ;}
+    .bg-blur        {backdrop-filter: blur(1em);}
     .bg-black       {background: var(--black  );}
     .bg-white       {background: var(--white  );}
+    .bg-lgray       {background: var(--lgray  );}
     .bg-gray        {background: var(--gray   );}
+    .bg-dgray       {background: var(--dgray  );}
     .bg-blue        {background: var(--blue   );}
     .bg-lblue       {background: var(--lblue  );}
     .bg-sky         {background: var(--sky    );}
@@ -658,7 +780,7 @@ input           {background: #e1ecff;
     .tti            {font-family: 'Readex Pro', sans-serif;font-size:45px;padding:0 8px;}
     .ttii           {font-family: 'Readex Pro', sans-serif;font-size:35px;padding:0 8px;}
     .ttiii          {font-family: 'Readex Pro', sans-serif;font-size:25px;padding:0 8px;}
-    .stxt           {font-family: 'Readex Pro', sans-serif;font-size:10px;}
+    .stxt           {font-family: 'Readex Pro', sans-serif;font-size:12px;}
     .txtc           {text-align : center;}
     .txtr           {text-align : right; }
     .txtl           {text-align : left;  }
