@@ -529,6 +529,19 @@ input           {background: #e1ecff;
         | panel-c = center panel
         | panel-r = right panel
 
+    Example of 2 panels 2:8
+    <div class="panels">
+        <div class="panel-20 mrgn- pdnii bg-lred">This is the left panel with 20% of total screen width in PC screens, and top panel in phone screens</div>
+        <div class="panel-80 mrgn- pdnii bg-lgreen">This is the right panel with 80% of total screen width in PC screens, and bottom panel in phone screens</div>
+    </div>
+
+    Example of 3 panels 2:6:2
+    <div class="panels">
+        <div class="panel-20 mrgn- pdnii bg-lred">This is the left panel with 20% of total screen width in PC screens, and top panel in phone screens</div>
+        <div class="panel-60 mrgn- pdnii bg-lblue">This is the middle panel with 60% of total screen width in PC screens, and middle in phone screens</div>
+        <div class="panel-20 mrgn- pdnii bg-lgreen">This is the right panel with 20% of total screen width in PC screens, and bottom panel in phone screens</div>
+    </div>
+
     */
      
     .panel-10  {width: 10%;}
@@ -604,7 +617,6 @@ added 27/03/2025 while developing Kromium project
 .jcsb           {justify-content: space-between}
 .jcse           {justify-content: space-evenly}
 
-
 /*
 <div class="cardi txtr mrgnii brrr introcard">
 <div class="flex mrgni" style="align-items: center; justify-content:space-between;">
@@ -619,7 +631,7 @@ added 27/03/2025 while developing Kromium project
 <hr>
 <div class="cardfooter flex jcsb">
     <div>
-        <button class="brrr b">كريم فرج</button>
+        <button class="brrr b">زرار</button>
     </div>
     <div>
         <button class="brrr b">حول</button>
@@ -628,6 +640,33 @@ added 27/03/2025 while developing Kromium project
 </div>
 </div>
 */
+
+/*/////////////////////////////////////////////////////////////////// 
+added 28/03/2025 while developing Kromium project
+                            ===============
+                               Alignment
+                            ===============
+*/
+/* items alignment */
+.algitemsc      {align-items:center;}
+.algitemse      {align-items:end;}
+.algitemse      {align-items:start;}
+.algitemss      {align-items:stretch;}
+.algitemsb      {align-items:baseline;}
+
+/* content alignment */
+.algcontc       {align-content:center;}
+.algconte       {align-content:end;}
+.algcontss      {align-content:stretch;}
+.algcontsb      {align-content:baseline;}
+.algcontsa      {align-content:space-around;}
+.algcontsb      {align-content:space-between;}
+.algcontse      {align-content:space-evenly;}
+
+/* vertical alignment */
+.valgnt         {vertical-align: top;}
+.valgnm         {vertical-align: middle;}
+.valgnb         {vertical-align: bottom;}
 
 
 /*///////////////////////////////////////////////////////////////////
@@ -776,11 +815,11 @@ added 27/03/2025 while developing Kromium project
 
     
     /* texts */
-    .tt             {font-family: 'Readex Pro', sans-serif;padding:0 8px;}
-    .tti            {font-family: 'Readex Pro', sans-serif;font-size:45px;padding:0 8px;}
-    .ttii           {font-family: 'Readex Pro', sans-serif;font-size:35px;padding:0 8px;}
-    .ttiii          {font-family: 'Readex Pro', sans-serif;font-size:25px;padding:0 8px;}
-    .stxt           {font-family: 'Readex Pro', sans-serif;font-size:12px;}
+    .tt             { /*font-family: 'Readex Pro', sans-serif;*/ padding:2px 8px;}
+    .tti            { /*font-family: 'Readex Pro', sans-serif;*/ font-size:45px;padding:2px 8px;}
+    .ttii           { /*font-family: 'Readex Pro', sans-serif;*/ font-size:35px;padding:2px 8px;}
+    .ttiii          { /*font-family: 'Readex Pro', sans-serif;*/ font-size:25px;padding:2px 8px;}
+    .stxt           { /*font-family: 'Readex Pro', sans-serif;*/ font-size:12px;}
     .txtc           {text-align : center;}
     .txtr           {text-align : right; }
     .txtl           {text-align : left;  }
